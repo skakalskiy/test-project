@@ -1,0 +1,1 @@
+export default {"scripts":"./app/scripts/pages/scripts.js"}

@@ -1,0 +1,7 @@
+{% macro script(data) %}
+  {% if data %}
+    <script src="./js/{{data}}.js"></script>
+  {% else %}
+    <script src="./js/index.js"></script>
+  {% endif %}
+{% endmacro %}

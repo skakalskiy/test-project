@@ -1,0 +1,34 @@
+.header{
+  padding-top: 6.933vw;
+  padding-bottom: 6.400vw;
+  .heading{
+    text-align: center;
+    font-size: 8.178vw;
+    font-weight: 700;
+    padding: 0 5.333vw 2.667vw;
+    span{
+      padding: 0 0 2.667vw;
+      width: 100%;
+      border-bottom: 0.267vw solid $black;
+    }
+  }
+  &__images{
+    .title{
+      text-align: center;
+      font-size: 3.022vw;
+      margin-bottom: 1.333vw;
+    }
+    .content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        height: 5.556vw;
+        &+img{
+          margin-left: 5.556vw;
+        }
+      }
+    }
+  }
+
+}
