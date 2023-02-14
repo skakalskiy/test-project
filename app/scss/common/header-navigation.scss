@@ -1,3 +1,20 @@
-body {
-    background: yellow;
+.header-navigation {
+    background: $gray;
+
+    &__link {
+        font-size: $font-size;
+        line-height: 16px;
+        color: $info-text-color;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 17px 0;
+    }
 }
