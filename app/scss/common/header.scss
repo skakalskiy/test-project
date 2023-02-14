@@ -1,3 +1,48 @@
-body {
-  background: red;
+$input-search-height: 40px;
+
+.header {
+  &__wrapper{
+    background: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  &__logo-block{
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img{
+
+  }
+
+  &__logo-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: $pink;
+    margin-left: 20px;
+  }
+
+  &__search-block {
+    background: $gray;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-icon {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+
+  &__search-input {
+    background: none;
+    outline: none;
+    border: none; 
+    height: $input-search-height;
+  }
 }

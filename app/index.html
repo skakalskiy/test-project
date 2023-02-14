@@ -1,9 +1,65 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 {% from "head.html" import head %}
 {{ head('style') }}
-<title>Chair-shop</title>
   <body>
+    <!-- HEADER-NAVIGATION-->
+   <section class="header-navigation">
+      <div class="wrapper header-navigation__wrapper">
+        <a class="header-navigation__link" href="#">
+          Доставка
+        </a>
+        <a class="header-navigation__link" href="#">
+          Оплата
+        </a>
+        <a class="header-navigation__link" href="#">
+          Отзывы
+        </a>
+        <a class="header-navigation__link" href="#">
+          Вопрос - ответ
+        </a>
+        <a class="header-navigation__link" href="#">
+          Контакты
+        </a>
+      </div>
+    </section>
+    <!-- HEADER-NAVIGATION-->
+    <!--HEADER-->
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        
+        <a class="header__logo-block">
+          <img class="header__logo-img" src="./images/logo.png" alt="logo" >
+          <span class="header__logo-title">
+            BEAUTY
+          </span>
+        </a>
+        
+        <div class="header__search-block ">
+          <img class="header__search-icon" src="./images/search-icon.svg" alt="search icon">
+
+          <input class="header__search-input" type="text">
+        </div>
+        
+        <div class="header__callback-block callback-block">
+          <a class="header__tel-number callback-block__tel-number" 
+              href="tel:88121234567">
+             8 (812) 123-45-67
+          </a>
+          <button class="header__callback-button callback-block__callback-button default-button">
+            Обратный звонок
+          </button>
+        </div>
+      
+      
+      
+      </div>
+
+
+
+
+    </header>
+    <!--HEADER-->
     
   </body>
 </html>
