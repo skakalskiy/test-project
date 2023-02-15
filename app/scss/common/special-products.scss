@@ -1,0 +1,12 @@
+.special-products {
+    background: $gray;
+
+    &__wrapper{
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+}

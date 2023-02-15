@@ -1,0 +1,19 @@
+$sponsor-item-width: 150px;
+$sponsor-item-height: 50px;
+
+.sponsor-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 60px;
+
+    background: $white; 
+    border: none;
+
+    &__img {
+       width: $sponsor-item-width;
+       height: $sponsor-item-height;
+       
+    }
+}
