@@ -1,0 +1,17 @@
+$wrapper-width: 60%;
+
+.wrapper {
+    width: $wrapper-width;
+
+    @include response ($laptop-l-width){
+        $wrapper-width: 80%;
+        width: $wrapper-width; 
+    }
+}
+
+section,
+header,
+footer {
+    display: flex;
+    justify-content: center;
+}

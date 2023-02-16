@@ -12,5 +12,13 @@
         &:not(:last-child){
             margin-right: 30px;
         }
+
+        @include response($laptop-l-width) {
+            &:not(:last-child){
+                margin-right: 0px;
+            }
+
+          
+        }    
     }
 }

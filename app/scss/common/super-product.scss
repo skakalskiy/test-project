@@ -1,6 +1,8 @@
 .super-product {
     background-image: url(../../images/background.png);
+    background-repeat: no-repeat;
     color: $main-text-color;
+  
 
     &__wrapper {
         display: flex;
@@ -37,5 +39,10 @@
     &__subtitle {
         margin-bottom: 55px;
     }
+
+    @include response($laptop-l-width) {
+        background-position: center;
+    }
+   
 }
 

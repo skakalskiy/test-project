@@ -11,4 +11,14 @@
         background: $white;
         border: 1px solid $pink;
     }
+
+    @include response($laptop-l-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__tel-number {
+            margin: 0;
+        }
+    }
 }
