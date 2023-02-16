@@ -13,6 +13,10 @@ $product-card-image-height: 165px;
 
     background: $white;
 
+    @include response($small-laptop-widht) {
+     width: 40%;   
+    }
+
 
     &__img{
         width: $product-card-image-width;

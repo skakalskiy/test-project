@@ -1,4 +1,6 @@
 .callback-block {
+    
+
     &__tel-number {
         font-size: 16px;
         line-height: 19px;
@@ -20,5 +22,12 @@
         &__tel-number {
             margin: 0;
         }
+    }
+
+    @include response($small-laptop-widht) {
+      &__tel-number {
+        padding-right: 15px;
+      }
+
     }
 }
