@@ -1,0 +1,30 @@
+$copyright-background: #EFEFEF;
+$copyright-text: #828282;
+
+.copyright {
+    background: $copyright-background;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 30px 0;
+    }
+
+    &__text {
+        font-weight: $font-weight;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: $copyright-text;
+    }
+
+    &__link {
+        font-weight: $font-weight;
+        font-size: 12px;
+        line-height: 14px;
+
+        color: $copyright-text;
+    }
+}
