@@ -2,18 +2,32 @@
     background-image: url(../../images/background.png);
     background-repeat: no-repeat;
     color: $main-text-color;
-  
+
+    
+    @include response($tablet-widht) {
+        background-size: 1200px 600px;     
+    }
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         padding: 215px 0;
+
+        @include response($tablet-widht) {
+            padding: 100px 0;
+          
+        }
+        
     }
 
     &__main-info {
         display: flex;
         flex-direction: column;
         max-width: 30%;
+
+        @include response ($small-laptop-widht){
+            margin-left: 40px;
+         }
     }
 
     &__title {
@@ -43,6 +57,8 @@
     @include response($laptop-l-width) {
         background-position: center;
     }
+
+  
    
 }
 

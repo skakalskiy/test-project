@@ -12,6 +12,11 @@ $wrapper-width: 60%;
         $wrapper-width: 90%;
         width: $wrapper-width; 
     }
+
+    @include response ($tablet-widht){
+        $wrapper-width: 100%;
+        width: $wrapper-width; 
+    }
 }
 
 section,

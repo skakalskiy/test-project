@@ -4,11 +4,24 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
+
+        @include response($tablet-widht) {
+           justify-content: center;
+        }
     }
 
     &__item {
         width: 25%;
         max-width: 25%;
         box-sizing: border-box;
+
+        @include response($tablet-widht) {
+            width: 50%;
+            max-width: 20%;
+            box-sizing: content-box;
+
+            padding: 15px 60px;
+         }
+
     }
 }
