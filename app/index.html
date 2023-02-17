@@ -1,8 +1,337 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 {% from "head.html" import head %}
 {{ head('style') }}
   <body>
-    123
+    <!-- HEADER-NAVIGATION-->
+   <section class="header-navigation">
+      <div class="wrapper header-navigation__wrapper">
+        <a class="header-navigation__link" href="#">
+          Доставка
+        </a>
+        <a class="header-navigation__link" href="#">
+          Оплата
+        </a>
+        <a class="header-navigation__link" href="#">
+          Отзывы
+        </a>
+        <a class="header-navigation__link" href="#">
+          Вопрос - ответ
+        </a>
+        <a class="header-navigation__link" href="#">
+          Контакты
+        </a>
+      </div>
+    </section>
+    <!-- HEADER-NAVIGATION-->
+    <!--HEADER-->
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        
+        <a class="header__logo-block">
+          <img class="header__logo-img" src="./images/logo.png" alt="logo" >
+          <span class="header__logo-title">
+            BEAUTY
+          </span>
+        </a>
+        
+        <div class="header__search-block ">
+          <img class="header__search-icon" src="./images/search-icon.svg" alt="search icon">
+
+          <input class="header__search-input" type="text">
+        </div>
+        
+        <div class="header__callback-block callback-block">
+          <a class="header__tel-number callback-block__tel-number" 
+              href="tel:88121234567">
+             8 (812) 123-45-67
+          </a>
+          <button class="header__callback-button callback-block__callback-button default-button">
+            Обратный звонок
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--HEADER-->
+    <!--SUPER-PRODUCT-->
+        <section class="super-product">
+          <div class="wrapper super-product__wrapper">
+            <div class="super-product__main-info">
+                <h2 class="super-product__title">
+                  Супер кресло
+                </h2>
+
+                <span class="super-product__subtitle">
+                  Текст акции всегда отражает суть, a не просто
+                  болтовню, поэтому внимательнее
+                </span>
+
+                <button class="super-product__button default-button">
+                  Подробнее
+                </button>
+            </div>
+          </div>
+        </section>   
+    <!--SUPER-PRODUCT-->
+    <!--SPECIAL_PRODUCTS-->
+        <section class="special-products">
+          <div class="wrapper special-products__wrapper">
+            <h2 class="special-products__title section-title">
+              Специальные предложения
+            </h2>
+            <div class="special-products__items products-layout">
+                <div class="special-products__item product-card">
+                  <img class="product-card__img" src="./images/chair.png" alt="">
+                  <span class="product-card__title">
+                    Парикмахерское кресло «Норм» гидравлическое
+                  </span>
+                  <span class="product-card__price">
+                    9 900 ₽ 
+                  </span>
+                  <button class="product-card__buy-button default-button">
+                    Купить
+                  </button>
+                </div>
+                <div class="special-products__item product-card">
+                  <img class="product-card__img" src="./images/chair.png" alt="">
+                  <span class="product-card__title">
+                    Парикмахерское кресло «Норм» гидравлическое
+                  </span>
+                  <span class="product-card__price">
+                    9 900 ₽ 
+                  </span>
+                  <button class="product-card__buy-button default-button">
+                    Купить
+                  </button>
+                </div>
+                <div class="special-products__item product-card">
+                  <img class="product-card__img" src="./images/chair.png" alt="">
+                  <span class="product-card__title">
+                    Парикмахерское кресло «Норм» гидравлическое
+                  </span>
+                  <span class="product-card__price">
+                    9 900 ₽ 
+                  </span>
+                  <button class="product-card__buy-button default-button">
+                    Купить
+                  </button>
+                </div>
+                <div class="special-products__item product-card">
+                  <img class="product-card__img" src="./images/chair.png" alt="">
+                  <span class="product-card__title">
+                    Парикмахерское кресло «Норм» гидравлическое
+                  </span>
+                  <span class="product-card__price">
+                    9 900 ₽ 
+                  </span>
+                  <button class="product-card__buy-button default-button">
+                    Купить
+                  </button>
+                </div>
+
+            </div>
+          </div>
+       </section>
+        <!--SPECIAL_PRODUCTS-->
+         <!--INFO_BLOCKS-->
+        <section class="info-blocks">
+          <div class="wrapper info-blocks__wrapper">
+            <div class="info-blocks__item info-block">
+              <div class="info-block__main-block">
+                <h2 class="info-block__title">
+                  Получайте бонусы и подарки
+                </h2>
+                <span class="info-block__subtitle">
+                  Каждый месяц разыгрываем
+                  10 000 рублей для наших клиентов
+                </span>
+                <input class="info-block__input" type="text" placeholder="Введите e-mail">
+  
+              </div>
+              <div class="info-block__image-block">
+                <img class="info-block__image" src="./images/envelope.png " alt="envelope">
+              </div>
+            </div>
+            <div class="info-blocks__item info-block">
+              <div class="info-block__main-block">
+                <h2 class="info-block__title">
+                  Получайте бонусы и подарки
+                </h2>
+                <span class="info-block__subtitle">
+                  Каждый месяц разыгрываем
+                  10 000 рублей для наших клиентов
+                </span>
+                <button class="info-block__button default-button">
+                  Карта магазинов
+                </button>
+  
+              </div>
+              <div class="info-block__image-block">
+                <img class="info-block__image" src="./images/car.png " alt="envelope">
+              </div>
+            </div>
+          </div>
+        </section>
+         <!--INFO_BLOCKS-->
+         <!--SPONSORS-->
+        <section class="sponsors">
+          <div class="wrapper sponsors__wrapper">
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+            <div class="sponsors__item sponsor-item">
+              <img class="sponsor-item__img" src="./images/sponsor1.png" alt="sponsor">
+            </div>
+          </div>
+        </section> 
+        <!--SPONSORS-->
+        <!--RECENTLY-WACHED-PRODUCTS-->
+       <section class="recently-wached-products">
+        <div class="wrapper recently-wached-products__wrapper">
+          <h2 class="recently-wached-products__title section-title">
+            Вы недавно смотрели
+          </h2>
+
+          <div class="recently-wached-products__items products-layout">
+              <div class="recently-wached-products__item product-card">
+                <img class="product-card__img" src="./images/chair.png" alt="">
+                <span class="product-card__title">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </span>
+                <span class="product-card__price">
+                  9 900 ₽ 
+                </span>
+                <button class="product-card__buy-button default-button">
+                  Купить
+                </button>
+              </div>
+              <div class="recently-wached-products__item product-card">
+                <img class="product-card__img" src="./images/chair.png" alt="">
+                <span class="product-card__title">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </span>
+                <span class="product-card__price">
+                  9 900 ₽ 
+                </span>
+                <button class="product-card__buy-button default-button">
+                  Купить
+                </button>
+              </div>
+              <div class="recently-wached-products__item product-card">
+                <img class="product-card__img" src="./images/chair.png" alt="">
+                <span class="product-card__title">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </span>
+                <span class="product-card__price">
+                  9 900 ₽ 
+                </span>
+                <button class="product-card__buy-button default-button">
+                  Купить
+                </button>
+              </div>
+              <div class="recently-wached-products__item product-card">
+                <img class="product-card__img" src="./images/chair.png" alt="">
+                <span class="product-card__title">
+                  Парикмахерское кресло «Норм» гидравлическое
+                </span>
+                <span class="product-card__price">
+                  9 900 ₽ 
+                </span>
+                <button class="product-card__buy-button default-button">
+                  Купить
+                </button>
+              </div>
+          </div>
+        </div>
+      </section>
+       <!--RECENTLY-WACHED-PRODUCTS-->
+      <!--FOOTER-->
+        <section class="footer">
+          <div class="wrapper footer__wrapper">
+            <div class="footer__social-links">
+              <a class="footer__social-link social-link" href="">
+                <img class="social-link__icon" src="./images/youtube-icon.svg" alt="YouTube">
+              </a>
+              <a class="footer__social-link social-link" href="">
+                <img class="social-link__icon" src="./images/vk.png" alt="Vk">
+              </a>
+              <a class="footer__social-link social-link" href="">
+                <img class="social-link__icon" src="./images/facebook.png" alt="Facebook">
+              </a>
+              <a class="footer__social-link social-link" href="">
+                <img class="social-link__icon" src="./images/instagram.svg" alt="Instagram">
+              </a>
+            </div>
+            <div class="footer__location-block">
+              <span class="footer__location-text">
+                198555, Невский пр. 140, офис 140
+              </span>
+            </div>
+            <div class="footer__callback-block callback-block">
+              <a class="footer__tel-number callback-block__tel-number" 
+                href="tel:88121234567">
+                8 (812) 123-45-67
+              </a>
+              <button class="footer__callback-button callback-block__callback-button default-button">
+                Обратный звонок
+              </button>
+            </div>
+          </div>
+        </section>
+        <!--FOOTER-->
+        <!--COPYRIGHT-->
+        <section class="copyright">
+          <div class="wrapper copyright__wrapper">
+            <span class="copyright__text">
+              Лучший магазин (с) 2021 Все права защищены. Интернет-магазин оборудования для салонов красоты
+            </span>
+            <a class="copyright__link" href="">
+              Политика конфиденциальности
+            </a>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!--COPYRIGHT-->
+
+
+    
   </body>
 </html>

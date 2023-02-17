@@ -1,0 +1,34 @@
+.header-navigation {
+    background: $gray;
+
+    &__link {
+        font-size: $font-size;
+        line-height: 16px;
+        color: $info-text-color;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 17px 0;
+
+        @include response ($tablet-widht){
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            display: contents;
+        }
+
+        @include response ($mobile-l-widht){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+}

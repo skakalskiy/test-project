@@ -1,34 +1,60 @@
-.header{
-  padding-top: 6.933vw;
-  padding-bottom: 6.400vw;
-  .heading{
-    text-align: center;
-    font-size: 8.178vw;
-    font-weight: 700;
-    padding: 0 5.333vw 2.667vw;
-    span{
-      padding: 0 0 2.667vw;
-      width: 100%;
-      border-bottom: 0.267vw solid $black;
+$input-search-height: 40px;
+
+.header {
+  &__wrapper{
+    background: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+    @include response($small-laptop-widht) {
+      flex-direction: column;
+      align-items: flex-start;   
     }
+
+    @include response($tablet-widht) {
+      padding-top: 0;
+    
   }
-  &__images{
-    .title{
-      text-align: center;
-      font-size: 3.022vw;
-      margin-bottom: 1.333vw;
-    }
-    .content{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      img{
-        height: 5.556vw;
-        &+img{
-          margin-left: 5.556vw;
-        }
-      }
-    }
   }
 
+  &__logo-block{
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: $pink;
+    margin-left: 20px;
+  }
+
+  &__search-block {
+    background: $gray;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__search-icon {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+
+  &__search-input {
+    background: none;
+    outline: none;
+    border: none; 
+    height: $input-search-height;
+  }
+
+  &__callback-block {
+    @include response($small-laptop-widht) {
+      align-self: flex-end; 
+    }
+  }
 }

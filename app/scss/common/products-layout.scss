@@ -1,0 +1,22 @@
+.products-layout {
+    display: flex;
+    justify-content: space-between;
+
+    @include response($small-laptop-widht) {
+        flex-wrap: wrap;  
+    }
+
+    & > *:not(:last-child){
+        margin-right: 30px;
+
+         
+    @include response($small-laptop-widht) {
+        margin-right: 0;   
+    }
+  
+    }
+
+   
+
+   
+}
