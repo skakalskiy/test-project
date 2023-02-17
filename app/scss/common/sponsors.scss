@@ -10,7 +10,10 @@
         }
 
         @include response ($mobile-l-widht){
-            display:contents;
+            
+            & > *:not(:last-child){
+                display: none;
+             }
         }
     }
 
@@ -30,7 +33,9 @@
         @include response ($mobile-l-widht){
             width: 50%;
             max-width: 15%;
+
         }
+      
 
         
 
