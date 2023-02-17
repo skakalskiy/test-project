@@ -14,12 +14,27 @@ $info-block-input-height: 35px;
         flex-direction: column;
         
         margin-right: 65px;
+
+        @include response($tablet-widht) {
+            margin-right: 15px;
+        }
+
+        @include response ($mobile-l-widht){
+            justify-content: center;
+            align-items: center;
+
+            margin-right: 0px;
+        }
     }
 
     &__image-block {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include response ($mobile-l-widht){
+            display: none;
+        }
     }
 
     &__image {
@@ -41,6 +56,8 @@ $info-block-input-height: 35px;
     &__title,
     &__subtitle {
         margin-bottom: 25px;
+
+       
     }
 
     &__input {

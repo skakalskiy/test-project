@@ -16,5 +16,19 @@
         align-items: center;
         justify-content: center;
         padding: 17px 0;
+
+        @include response ($tablet-widht){
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            display: contents;
+        }
+
+        @include response ($mobile-l-widht){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
     }
 }

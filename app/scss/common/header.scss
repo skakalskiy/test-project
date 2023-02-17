@@ -7,6 +7,16 @@ $input-search-height: 40px;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+
+    @include response($small-laptop-widht) {
+      flex-direction: column;
+      align-items: flex-start;   
+    }
+
+    @include response($tablet-widht) {
+      padding-top: 0;
+    
+  }
   }
 
   &__logo-block{
@@ -40,5 +50,11 @@ $input-search-height: 40px;
     outline: none;
     border: none; 
     height: $input-search-height;
+  }
+
+  &__callback-block {
+    @include response($small-laptop-widht) {
+      align-self: flex-end; 
+    }
   }
 }

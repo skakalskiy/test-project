@@ -3,6 +3,15 @@
     
     &__wrapper {
         padding: 80px 0;
+
+        @include response($tablet-widht) {
+            padding-bottom: 30px;
+          
+        }
+
+        @include response ($mobile-l-widht){
+           padding-top: 30px;
+        }
     }
 
     &__title {

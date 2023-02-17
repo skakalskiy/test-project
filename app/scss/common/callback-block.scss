@@ -1,4 +1,6 @@
 .callback-block {
+    
+
     &__tel-number {
         font-size: 16px;
         line-height: 19px;
@@ -10,5 +12,22 @@
         border-color: $pink !important;
         background: $white;
         border: 1px solid $pink;
+    }
+
+    @include response($laptop-l-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__tel-number {
+            margin: 0;
+        }
+    }
+
+    @include response($small-laptop-widht) {
+      &__tel-number {
+        padding-right: 15px;
+      }
+
     }
 }

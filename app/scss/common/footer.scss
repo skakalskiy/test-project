@@ -1,0 +1,52 @@
+.footer {
+    background: $white;
+
+  
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 37px 0;
+
+        @include response($small-laptop-widht) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+         }
+    }
+
+    &__location-text {
+        font-weight: $font-weight;
+        font-size: $font-size;
+        line-height: 16px;
+    }
+
+    &__social-links {
+        display: flex;
+        align-items: center;
+
+        @include response($small-laptop-widht) {
+           margin-bottom: 10px;
+         }
+    }
+
+    &__social-link {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__location-block {
+        @include response($small-laptop-widht) {
+            margin-bottom: 10px;
+          }
+    }
+
+    &__callback-block {
+        @include response($small-laptop-widht) {
+          align-self: center;
+          align-items: center; 
+        }
+      }
+}   

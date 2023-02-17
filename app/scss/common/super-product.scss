@@ -1,23 +1,48 @@
 .super-product {
     background-image: url(../../images/background.png);
+    background-repeat: no-repeat;
     color: $main-text-color;
+
+    
+    @include response($tablet-widht) {
+        background-size: 1200px 600px;     
+    }
+    @include response ($mobile-l-widht){
+        background-size: 900px 500px;
+    }
+    
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         padding: 215px 0;
+
+        @include response($tablet-widht) {
+            padding: 100px 0;
+          
+        }
+        
     }
 
     &__main-info {
         display: flex;
         flex-direction: column;
         max-width: 30%;
+
+        @include response ($small-laptop-widht){
+            margin-left: 40px;
+         }
     }
 
     &__title {
         font-weight: bold;
         font-size: 48px;    
         line-height: 56px;
+
+        @include response ($mobile-l-widht){
+            font-size: 30px;
+            line-height: 39px;
+        }
     }
 
     &__subtetle {
@@ -31,11 +56,22 @@
         border-color: $white !important;
         max-width: 170px;
         color: $main-text-color !important;
+
+        @include response ($mobile-l-widht){
+            margin-right: auto;
+        }
     }
 
     &__title,
     &__subtitle {
         margin-bottom: 55px;
     }
+
+    @include response($laptop-l-width) {
+        background-position: center;
+    }
+
+  
+   
 }
 
