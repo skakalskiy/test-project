@@ -7,6 +7,10 @@
     @include response($tablet-widht) {
         background-size: 1200px 600px;     
     }
+    @include response ($mobile-l-widht){
+        background-size: 900px 500px;
+    }
+    
 
     &__wrapper {
         display: flex;
@@ -34,6 +38,11 @@
         font-weight: bold;
         font-size: 48px;    
         line-height: 56px;
+
+        @include response ($mobile-l-widht){
+            font-size: 30px;
+            line-height: 39px;
+        }
     }
 
     &__subtetle {
@@ -47,6 +56,10 @@
         border-color: $white !important;
         max-width: 170px;
         color: $main-text-color !important;
+
+        @include response ($mobile-l-widht){
+            margin-right: auto;
+        }
     }
 
     &__title,

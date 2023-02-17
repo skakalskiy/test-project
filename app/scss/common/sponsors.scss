@@ -8,6 +8,10 @@
         @include response($tablet-widht) {
            justify-content: center;
         }
+
+        @include response ($mobile-l-widht){
+            display:contents;
+        }
     }
 
     &__item {
@@ -21,7 +25,14 @@
             box-sizing: content-box;
 
             padding: 15px 60px;
-         }
+        }
+
+        @include response ($mobile-l-widht){
+            width: 50%;
+            max-width: 15%;
+        }
+
+        
 
     }
 }

@@ -17,7 +17,11 @@ $product-card-image-height: 165px;
      width: 40%;   
     }
 
+    @include response ($mobile-l-widht){
+        width: 100%;
+    }
 
+    
     &__img{
         width: $product-card-image-width;
         height: $product-card-image-height;
@@ -42,6 +46,10 @@ $product-card-image-height: 165px;
         background: $pink;
         color: $main-text-color;
         border: none;
+
+        @include response ($mobile-l-widht){
+            width: 100%;
+        }
 
     }
 

@@ -8,6 +8,10 @@
             padding-bottom: 30px;
           
         }
+
+        @include response ($mobile-l-widht){
+           padding-top: 30px;
+        }
     }
 
     &__title {

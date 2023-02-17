@@ -23,7 +23,11 @@
             align-items: center;
 
             display: contents;
-            
+        }
+
+        @include response ($mobile-l-widht){
+            display: flex;
+            flex-wrap: wrap;
         }
 
     }
